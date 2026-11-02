@@ -1,0 +1,10 @@
+# API secrets
+.env
+*.env
+
+# Python virtual environment
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc

@@ -1,0 +1,32 @@
+
+{
+  "manifest_version": 3,
+  "name": "PagePilot AI",
+  "version": "0.1.0",
+  "description": "Ask questions about any webpage using AI.",
+
+  "permissions": [
+    "sidePanel",
+    "activeTab",
+    "scripting",
+    "tabs"
+  ],
+
+  "host_permissions": [
+    "http://127.0.0.1:8000/*",
+    "http://*/*",
+    "https://*/*"
+  ],
+
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+
+  "action": {
+    "default_title": "Open PagePilot AI"
+  },
+
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  }
+}

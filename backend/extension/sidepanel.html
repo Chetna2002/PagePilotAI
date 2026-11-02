@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PagePilot AI</title>
+    <link rel="stylesheet" href="sidepanel.css">
+</head>
+
+<body>
+
+    <div class="app-container">
+
+        <header class="header">
+            <div class="brand">
+                <div class="logo">P</div>
+                <div>
+                    <h1>PagePilot AI</h1>
+                    <p>Your intelligent webpage assistant</p>
+                </div>
+            </div>
+            <span class="status-dot"></span>
+        </header>
+
+        <main class="main-content">
+
+            <section class="page-section">
+                <h2>Current webpage</h2>
+
+                <div class="page-card">
+                    <h3 id="pageTitle">No webpage selected</h3>
+                    <p id="pageStatus">
+                        Click below to read the current webpage.
+                    </p>
+
+                    <button id="readPage" class="primary-button">
+                        Read this page
+                    </button>
+                </div>
+
+                <div id="pagePreview" class="page-preview">
+                    Your webpage content will appear here.
+                </div>
+            </section>
+
+            <section class="chat-section">
+                <h2>Ask PagePilot</h2>
+
+                <div id="chatMessages" class="chat-messages">
+                    <div class="message assistant">
+                        Hi! Read a webpage and ask me anything about it.
+                    </div>
+                </div>
+
+                <div class="input-area">
+                    <textarea
+                        id="questionInput"
+                        placeholder="Ask something about this page..."
+                        rows="3"
+                    ></textarea>
+
+                    <button id="sendQuestion" class="send-button">
+                        Ask AI
+                    </button>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            Powered by PagePilot AI
+        </footer>
+
+    </div>
+
+    <script src="sidepanel.js"></script>
+
+</body>
+</html>
